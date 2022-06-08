@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import {  HiChatAlt, HiAcademicCap, HiOutlineClipboardList, HiUserCircle, HiOutlineBriefcase, HiInformationCircle} from "react-icons/hi";
 import AboutMe from "./aboutme";
+import ContactMe from "./contactme";
 import Education from "./education";
 import Experience from "./experience";
 import Resume from "./resume";
@@ -28,7 +29,7 @@ class Navbar extends React.Component<{}, {page: string}> {
                 <button onClick={() => {this.setState({page: "resume"})}}><SideBarIcon icon={<HiOutlineClipboardList size="50" />} text="Resume"/></button>
                 <button onClick={() => {this.setState({page: "experience"})}}><SideBarIcon icon={<HiOutlineBriefcase size="50" />} text="Experience"/></button>
                 <button onClick={() => {this.setState({page: "contact"})}}><SideBarIcon icon={<HiChatAlt size="50" />} text="Contact Me!"/></button>
-                <button onClick={() => {this.setState({page: "info"})}}><SideBarIcon icon={<HiInformationCircle size="50" />} text="Website Info"/></button>
+                <button onClick={() => {this.setState({page: "websiteinfo"})}}><SideBarIcon icon={<HiInformationCircle size="50" />} text="Website Info"/></button>
 
             </div>
         
@@ -62,6 +63,7 @@ class NavPage extends React.Component<any, any> {
             page = <Experience/>;
             break;
         case "contact":
+            page = <ContactMe/>
             break;
         case "info":
             break;
@@ -73,6 +75,14 @@ class NavPage extends React.Component<any, any> {
         </div>
         )
     }
+}
+
+const TopNavBar = () => {
+    return(
+    <div>
+        
+    </div>
+    )
 }
 
 const SideBarIcon = ({ icon, text, page }:any) => {
