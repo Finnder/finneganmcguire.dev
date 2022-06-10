@@ -7,11 +7,9 @@ import Experience from "./experience";
 import Resume from "./resume";
 import WebsiteInfo from "./websiteinfo";
 
-
 class Navbar extends React.Component<{}, {page: string}> {
 
     constructor(props: any){
-
         super(props)
         this.state = {
             page:"aboutme"
@@ -22,7 +20,7 @@ class Navbar extends React.Component<{}, {page: string}> {
         return(
             <div>
 
-            <div className="fixed top-0 left-0 h-screen w-24 m-0 flex flex-col bg-gray-900 text-white shadow-md">
+                <div className="sidebar-main">
                 
                 <button onClick={() => {this.setState({page: "aboutme"})}}><SideBarIcon icon={<HiUserCircle size="50" />} text="About Me"/> </button>
                 <button onClick={() => {this.setState({page: "education"})}}><SideBarIcon icon={<HiAcademicCap size="50" />} text="My Education"/></button>
@@ -40,11 +38,11 @@ class Navbar extends React.Component<{}, {page: string}> {
 }
 
 class NavPage extends React.Component<any, any> {
+    
 
  
     render(){
         let page;
-        let scale = 0;
 
         switch(this.props.page){
         case "aboutme":

@@ -1,6 +1,6 @@
 const Experience = () => {
     return(
-    <div>
+    <div className="background-main">
     </div>
     )
 }
