@@ -3,14 +3,17 @@ const ContactMe = () => {
     <div className="background-main">
     <br/>
     <br/>
-    <div className="py-5 px-10 max-w-[70%] mx-auto bg-white rounded-sm drop-shadow-xl">
-            <p className="font-bold text-xl py-2">Contact Me</p>
-            <div className="mx-1 py-4 bg-gray-800 rounded-xl origin-bottom">
+    <div className="py-5 px-10 sm:px-3 max-w-[70%] sm:max-w-[95%] sm:h-[fit-content]  mx-auto bg-white rounded-sm drop-shadow-xl">
+            <p className="py-2 text-xl font-bold">Contact Me</p>
+            <div className="py-4 mx-1 bg-gray-800 rounded-xl origin-bottom">
                 <form>
-                    <input type="email" placeholder="Email" className="p-1 peer ..."/>
-                        <br/>
-                        <br/>
-                    <input type="email" placeholder="Name" className="p-1 peer ..."/>
+                    <input type="email" placeholder="Email" className="p-1 peer w-[50%] sm:w-[80%]"/>
+                    <br/>
+                    <br/>
+                    <input type="email" placeholder="Name" className="p-1 peer w-[50%] sm:w-[80%]"/>
+                    <br/>
+                    <br/>
+                    <textarea className="p-3 border-2 drop-shadow-xl w-[50%] sm:w-[80%]"/>
                 </form>
             </div>
         </div>

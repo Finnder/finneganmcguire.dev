@@ -12,25 +12,21 @@ class Navbar extends React.Component<{}, {page: string}> {
     constructor(props: any){
         super(props)
         this.state = {
-            page:"aboutme"
+            page:"aboutme" // Stores current page data
         }
     }
 
     render(){
         return(
             <div>
-
                 <div className="sidebar-main">
-                
-                <button onClick={() => {this.setState({page: "aboutme"})}}><SideBarIcon icon={<HiUserCircle size="50" />} text="About Me"/> </button>
-                <button onClick={() => {this.setState({page: "education"})}}><SideBarIcon icon={<HiAcademicCap size="50" />} text="My Education"/></button>
-                <button onClick={() => {this.setState({page: "resume"})}}><SideBarIcon icon={<HiOutlineClipboardList size="50" />} text="Resume"/></button>
-                <button onClick={() => {this.setState({page: "experience"})}}><SideBarIcon icon={<HiOutlineBriefcase size="50" />} text="Experience"/></button>
-                <button onClick={() => {this.setState({page: "contact"})}}><SideBarIcon icon={<HiChatAlt size="50" />} text="Contact Me!"/></button>
-                <button onClick={() => {this.setState({page: "websiteinfo"})}}><SideBarIcon icon={<HiInformationCircle size="50" />} text="Website Info"/></button>
-
-            </div>
-        
+                    <button onClick={() => {this.setState({page: "aboutme"})}}><SideBarIcon icon={<HiUserCircle size="50" />} text="About Me"/> </button>
+                    <button onClick={() => {this.setState({page: "education"})}}><SideBarIcon icon={<HiAcademicCap size="50" />} text="My Education"/></button>
+                    <button onClick={() => {this.setState({page: "resume"})}}><SideBarIcon icon={<HiOutlineClipboardList size="50" />} text="Resume"/></button>
+                    <button onClick={() => {this.setState({page: "experience"})}}><SideBarIcon icon={<HiOutlineBriefcase size="50" />} text="Experience"/></button>
+                    <button onClick={() => {this.setState({page: "contact"})}}><SideBarIcon icon={<HiChatAlt size="50" />} text="Contact Me!"/></button>
+                    <button onClick={() => {this.setState({page: "websiteinfo"})}}><SideBarIcon icon={<HiInformationCircle size="50" />} text="Website Info"/></button>
+                </div>
             <NavPage page={this.state.page}/>
         </div>
         )
@@ -38,9 +34,7 @@ class Navbar extends React.Component<{}, {page: string}> {
 }
 
 class NavPage extends React.Component<any, any> {
-    
 
- 
     render(){
         let page;
 
@@ -83,7 +77,7 @@ const TopNavBar = () => {
     )
 }
 
-const SideBarIcon = ({ icon, text, page }:any) => {
+const SideBarIcon = ({ icon, text }:any) => {
     return(
         <div className="sidebar-icon group">
             {icon}
