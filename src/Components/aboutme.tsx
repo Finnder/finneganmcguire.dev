@@ -26,6 +26,14 @@ const AboutMe = () => {
                 <span className="font-bold text-red-200">Website Info</span>.<br/>
             </p>
         </div>
+
+        <div className="footer">
+            <br/>
+            <br/>
+            <br/>
+                <br/>
+                    <p className="text-rose-400/50 ">Work In Progress Site...</p>
+        </div>
     </div>
     )
 }
