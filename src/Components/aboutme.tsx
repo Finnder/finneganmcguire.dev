@@ -1,5 +1,6 @@
 import FinnPicture from "../Images/finnpic.png"
 import { Typewriter } from "react-simple-typewriter"
+import { BsGithub, BsLinkedin } from "react-icons/bs"
 
 const AboutMe = () => {
     return(
@@ -31,8 +32,11 @@ const AboutMe = () => {
             <br/>
             <br/>
             <br/>
-                <br/>
-                    <p className="text-rose-400/50 ">Work In Progress Site...</p>
+            <br/>
+            <div className="icons mx-auto w-[fit-content] flex gap-4">
+                <a href="https://github.com/Finnder"><BsGithub className="text-white" size={50}/></a>
+                <a href="https://www.linkedin.com/in/finnegan-mcguire"><BsLinkedin className="text-white" size={50}/></a>
+            </div>
         </div>
     </div>
     )
