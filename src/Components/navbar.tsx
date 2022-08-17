@@ -17,7 +17,7 @@ class Navbar extends React.Component<{}, {page: string}> {
         return(
             <div>
                 <div className="sidebar-main">
-                    <a href="/aboutme"><SideBarIcon icon={<HiUserCircle size="50" />} text="About Me"/> </a>
+                    <a href="/"><SideBarIcon icon={<HiUserCircle size="50" />} text="About Me"/> </a>
                     <a href="/education"><SideBarIcon icon={<HiAcademicCap size="50" />} text="My Education"/></a>
                     <a href="/resume"><SideBarIcon icon={<HiOutlineClipboardList size="50" />} text="Resume"/></a>
                     <a href="/workexperience"><SideBarIcon icon={<HiOutlineBriefcase size="50" />} text="Experience"/></a>
