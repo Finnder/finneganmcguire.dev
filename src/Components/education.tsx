@@ -10,9 +10,10 @@ const Education = () => {
             <br/>
             <div className="bg-white grid grid-cols-2 p-5">
                 <div className="bg-gray-400 rounded-xl p-5"><img src={AppLogo}/></div>           
-                <div className="bg-gray-700 rounded-xl p-4 text-white"><img className="border border-white" src={FinnPhoto}/>Graduation Photo will go here</div>           
+                <div className="bg-gray-700 rounded-xl p-4 text-white"><img className="border border-white" src={FinnPhoto}/></div>           
             </div>
-            <p className="text-3xl py-3 sm:text-lg">I graduated with a computer science degree in...</p>
+            <p className="text-3xl py-3 sm:text-lg">Currently Attending Appalachian State University</p>
+            <p className="text-xl py-1 sm:text-md">Currently a <strong>Jr</strong>.</p>
         </div>
     </div>
     )
